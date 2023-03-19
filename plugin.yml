@@ -1,0 +1,5 @@
+name: ItemStacker
+version: 1.0.0
+author: JkqzDev
+main: juqn/itemstacker/Main
+api: 4.0.0
