@@ -9,7 +9,7 @@ use pocketmine\event\entity\EntitySpawnEvent;
 use pocketmine\event\EventPriority;
 use pocketmine\plugin\PluginBase;
 
-final class Main extends PluginBase {
+final class Loader extends PluginBase {
 
     protected function onEnable(): void {
         $this->getServer()->getPluginManager()->registerEvent(EntitySpawnEvent::class, function (EntitySpawnEvent $event): void {
