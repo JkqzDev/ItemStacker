@@ -19,10 +19,10 @@ final class Loader extends PluginBase {
                 return;
             }
             $item = $entity->getItem();
-            $entities = $entity->getWorld()->getNearbyEntities($entity->getBoundingBox()->expand(5, 5, 5));
+            $entities = $entity->getWorld()->getNearbyEntities($entity->getBoundingBox()->expand(5, 5, 5), $item);
 
             foreach ($entities as $en) {
-                if (!$en instanceof ItemEntity || $en->getId() === $entity->getId()) {
+                if (!$en instanceof ItemEntity || $en->isFlaggedForDespawn() || $en->isClosed()) {
                     continue;
                 }
                 $it = $en->getItem();
