@@ -1,5 +1,5 @@
-name: Loader
-version: 1.0.0
+name: ItemStacker
+version: 1.0.1
 author: JkqzDev
 main: juqn\itemstacker\Loader
 api: 4.0.0
